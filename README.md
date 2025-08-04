@@ -2,6 +2,8 @@
 
 A responsive portfolio website for project manager **Natnael Bedilu**, featuring a
 split hero with photo and overview, services, selected projects, and a contact form.
+Smooth scrolling, hover animations, and an active navigation highlight make the
+page feel lively and interactive on every device.
 
 ## Getting Started
 
@@ -11,7 +13,7 @@ Open `index.html` in a browser to view the site.
 
 - `index.html` – main page markup with split hero, services, projects, and contact sections
 - `styles.css` – site styles including responsive layout and navigation
-- `script.js` – navigation toggle logic, scroll-triggered animations, email handler for the contact form, and theme switch
+- `script.js` – navigation toggle logic, active link highlighting, scroll-triggered animations, email handler for the contact form, and theme switch
 
 ## Deploying to GitHub Pages
 

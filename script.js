@@ -1,6 +1,7 @@
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');
 const navLinks = document.querySelectorAll('#nav-list a');
+const sections = document.querySelectorAll('section[id]');
 const themeToggle = document.getElementById('theme-toggle');
 
 navToggle.addEventListener('click', () => {
@@ -13,6 +14,23 @@ navLinks.forEach(link => link.addEventListener('click', () => {
   navList.classList.remove('open');
   navToggle.setAttribute('aria-expanded', 'false');
 }));
+
+const setActiveLink = () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 80;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href').slice(1);
+    link.classList.toggle('active', href === current);
+  });
+};
+
+window.addEventListener('scroll', setActiveLink);
+setActiveLink();
 
 if (themeToggle) {
   const savedTheme = localStorage.getItem('theme');
