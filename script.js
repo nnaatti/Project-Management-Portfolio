@@ -1,6 +1,7 @@
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');
 const navLinks = document.querySelectorAll('#nav-list a');
+const themeToggle = document.getElementById('theme-toggle');
 
 navToggle.addEventListener('click', () => {
   const expanded = navToggle.getAttribute('aria-expanded') === 'true';
@@ -12,6 +13,20 @@ navLinks.forEach(link => link.addEventListener('click', () => {
   navList.classList.remove('open');
   navToggle.setAttribute('aria-expanded', 'false');
 }));
+
+if (themeToggle) {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.setAttribute('data-theme', 'dark');
+    themeToggle.checked = true;
+  }
+
+  themeToggle.addEventListener('change', () => {
+    const theme = themeToggle.checked ? 'dark' : 'light';
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  });
+}
 
 const animatedElements = document.querySelectorAll('.fade-up');
 
