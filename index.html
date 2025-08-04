@@ -1,79 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of project manager Alex Morgan">
-    <title>Project Manager Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio site for project manager Alex Morgan" />
+  <title>Alex Morgan | Project Manager</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Alex Morgan</h1>
-            <nav id="nav">
-                <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-                <ul id="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">Alex Morgan</a>
+      <nav id="nav">
+        <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+        <ul id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Project Management Portfolio</h2>
-            <p>Delivering projects on time, on budget, and on target.</p>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h1>Delivering results through strategic project leadership</h1>
+      <p>Guiding teams from concept to completion with clarity and purpose.</p>
+      <a href="#contact" class="btn">Let's Work Together</a>
+    </div>
+  </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Experienced project manager with a passion for guiding teams to success. Skilled in agile methodologies and cross-functional collaboration.</p>
-        </div>
-    </section>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a certified project manager with over eight years of experience overseeing complex initiatives across technology, marketing, and operations. I believe in transparent communication, data-driven planning, and empowering teams to do their best work.</p>
+      </div>
+      <div class="about-image"></div>
+    </div>
+  </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Website Redesign</h3>
-                    <p>Led a complete redesign of corporate website, improving user engagement by 40%.</p>
-                </div>
-                <div class="card">
-                    <h3>Product Launch</h3>
-                    <p>Coordinated cross-departmental teams to launch a new product line ahead of schedule.</p>
-                </div>
-                <div class="card">
-                    <h3>Process Optimization</h3>
-                    <p>Implemented new workflow tools that reduced overhead costs by 15%.</p>
-                </div>
-            </div>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="service">
+          <h3>Project Planning</h3>
+          <p>Scope definition, milestones, and budgeting to set your project up for success.</p>
         </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+        <div class="service">
+          <h3>Team Leadership</h3>
+          <p>Motivating and aligning cross‑functional teams toward shared objectives.</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Alex Morgan</p>
+        <div class="service">
+          <h3>Risk Management</h3>
+          <p>Identifying and mitigating potential blockers before they impact delivery.</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <div class="project-card">
+          <div class="project-image project1"></div>
+          <h3>Enterprise Resource Planning Rollout</h3>
+          <p>Coordinated a global ERP deployment across six countries on schedule and within budget.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-image project2"></div>
+          <h3>Marketing Automation Platform</h3>
+          <p>Led cross‑departmental teams to launch a platform that increased lead generation by 30%.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-image project3"></div>
+          <h3>Customer Support Revamp</h3>
+          <p>Oversaw implementation of a new support workflow, reducing response times by 40%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Alex Morgan</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
