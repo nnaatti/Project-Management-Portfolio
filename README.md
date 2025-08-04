@@ -11,7 +11,7 @@ Open `index.html` in a browser to view the site.
 
 - `index.html` – main page markup with hero, about, services, projects, and contact sections
 - `styles.css` – site styles including responsive layout and navigation
-- `script.js` – navigation toggle logic and scroll-triggered animations
+- `script.js` – navigation toggle logic, scroll-triggered animations, and email handler for the contact form
 
 ## Deploying to GitHub Pages
 
@@ -22,4 +22,6 @@ the portfolio instead of the default README view.
 ## Customization
 
 If you fork this repository, update the name and contact info in `index.html`
-and adjust project and service descriptions to match your experience.
+and adjust project and service descriptions to match your experience. The
+contact form sends a `mailto` email to `natnaelamare1314@gmail.com`; change the
+address in `script.js` if you want submissions delivered elsewhere.

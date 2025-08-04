@@ -25,3 +25,19 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 animatedElements.forEach(el => observer.observe(el));
+
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:natnaelamare1314@gmail.com?subject=${subject}&body=${body}`;
+    form.reset();
+  });
+}
