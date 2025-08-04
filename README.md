@@ -1,7 +1,7 @@
 # Project Management Portfolio
 
-A responsive portfolio website for a project manager, featuring sections for
-about, services, selected projects, and a contact form.
+A responsive portfolio website for project manager **Natnael Bedilu**, featuring
+sections for about, services, selected projects, and a contact form.
 
 ## Getting Started
 
@@ -21,6 +21,5 @@ the portfolio instead of the default README view.
 
 ## Customization
 
-- Replace "Your Name" in `index.html` with your own name and update the About section text.
-- Update the contact info block in `index.html` with your email and phone number.
-- Adjust project and service descriptions to reflect your experience.
+If you fork this repository, update the name and contact info in `index.html`
+and adjust project and service descriptions to match your experience.
