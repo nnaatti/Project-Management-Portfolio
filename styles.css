@@ -3,17 +3,17 @@
 }
 
 :root {
-    --bg-color: #fff;
-    --text-color: #333;
-    --header-bg: #333;
-    --header-text: #fff;
-    --accent-bg: #f4f4f4;
-    --card-bg: #fff;
-    --card-border: #ddd;
-    --button-bg: #333;
-    --button-text: #fff;
-    --footer-bg: #333;
-    --footer-text: #fff;
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --header-bg: #ffffff;
+    --header-text: #1a1a1a;
+    --accent-bg: #f2f2f2;
+    --card-bg: #ffffff;
+    --card-border: #e5e5e5;
+    --button-bg: #1a1a1a;
+    --button-text: #ffffff;
+    --footer-bg: #ffffff;
+    --footer-text: #1a1a1a;
 }
 
 body {
@@ -128,17 +128,17 @@ footer {
 }
 
 body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #f4f4f4;
-    --header-bg: #222;
-    --header-text: #fff;
-    --accent-bg: #1e1e1e;
-    --card-bg: #1e1e1e;
-    --card-border: #444;
-    --button-bg: #444;
-    --button-text: #fff;
-    --footer-bg: #222;
-    --footer-text: #fff;
+    --bg-color: #000000;
+    --text-color: #eaeaea;
+    --header-bg: #000000;
+    --header-text: #eaeaea;
+    --accent-bg: #121212;
+    --card-bg: #121212;
+    --card-border: #333333;
+    --button-bg: #333333;
+    --button-text: #eaeaea;
+    --footer-bg: #000000;
+    --footer-text: #eaeaea;
 }
 
 @media (max-width: 768px) {

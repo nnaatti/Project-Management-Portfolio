@@ -1,6 +1,6 @@
 # Project Management Portfolio
 
-This is a simple portfolio website for project manager Alex Morgan. It showcases projects and includes a contact form. The site features a responsive navigation menu and a dark mode toggle.
+This is a simple portfolio website for project manager Alex Morgan. It showcases projects and includes a contact form. The site features a responsive navigation menu, a dark mode toggle, and a minimalistic color palette.
 
 ## Development
 
