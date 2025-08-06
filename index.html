@@ -1,79 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of project manager Alex Morgan">
-    <title>Project Manager Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ERSAS - Elevating Businesses with Premier Design & Tech">
+  <title>ERSAS Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Alex Morgan</h1>
-            <nav id="nav">
-                <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-                <ul id="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">ERSAS</h1>
+    <nav id="nav" class="site-nav">
+      <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-list">☰</button>
+      <ul id="nav-list">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">🌙</button>
+  </div>
+</header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Project Management Portfolio</h2>
-            <p>Delivering projects on time, on budget, and on target.</p>
-        </div>
-    </section>
+<section class="hero">
+  <img src="https://via.placeholder.com/1600x600" alt="Design and technology collage">
+  <div class="hero-content">
+    <h2>Elevating Businesses with Premier Design &amp; Tech</h2>
+  </div>
+</section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Experienced project manager with a passion for guiding teams to success. Skilled in agile methodologies and cross-functional collaboration.</p>
-        </div>
-    </section>
+<section id="work" class="work reveal">
+  <div class="container">
+    <h2>Our Work</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>RCT</h3>
+        <p>Increase in Client Engagement 50%</p>
+        <blockquote>“ERSAS transformed our digital presence.”</blockquote>
+      </article>
+      <article class="card">
+        <h3>Bolttek</h3>
+        <p>Improved conversion rate by 35%</p>
+        <blockquote>“A seamless launch that exceeded expectations.”</blockquote>
+      </article>
+      <article class="card">
+        <h3>Adam Academy</h3>
+        <p>Enrollment boosted by 20%</p>
+        <blockquote>“Intuitive design made a real impact.”</blockquote>
+      </article>
+      <article class="card">
+        <h3>Love in Action</h3>
+        <p>Donation growth 60%</p>
+        <blockquote>“Our mission amplified through thoughtful UX.”</blockquote>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Website Redesign</h3>
-                    <p>Led a complete redesign of corporate website, improving user engagement by 40%.</p>
-                </div>
-                <div class="card">
-                    <h3>Product Launch</h3>
-                    <p>Coordinated cross-departmental teams to launch a new product line ahead of schedule.</p>
-                </div>
-                <div class="card">
-                    <h3>Process Optimization</h3>
-                    <p>Implemented new workflow tools that reduced overhead costs by 15%.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="services" class="services reveal">
+  <div class="container">
+    <h2>Services</h2>
+    <ul class="service-list">
+      <li>Branding</li>
+      <li>Web &amp; App Development</li>
+      <li>UX/UI Design</li>
+      <li>E‑Commerce Solutions</li>
+    </ul>
+  </div>
+</section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+<section id="about" class="about reveal">
+  <div class="container">
+    <h2>About / Process</h2>
+    <p>We collaborate closely with clients through discovery, design, and development to deliver measurable results.</p>
+  </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Alex Morgan</p>
-        </div>
-    </footer>
+<section id="blog" class="blog reveal">
+  <div class="container">
+    <h2>Blog</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Design Trends 2024</h3>
+        <p>Stay ahead with the latest in minimalistic design.</p>
+      </article>
+      <article class="card">
+        <h3>Optimizing UX for Mobile</h3>
+        <p>Key considerations for a mobile-first world.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<section id="contact" class="contact reveal">
+  <div class="container">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Company" required>
+      <input type="tel" placeholder="Phone" required>
+      <select required>
+        <option value="" disabled selected>Budget</option>
+        <option>$25K–$50K</option>
+        <option>$50K–$75K</option>
+        <option>$75K–$100K</option>
+        <option>$100K–$150K</option>
+        <option>$150K+</option>
+      </select>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="social">
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="Instagram">📸</a>
+      <a href="#" aria-label="Telegram">✈️</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2024 ERSAS</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
